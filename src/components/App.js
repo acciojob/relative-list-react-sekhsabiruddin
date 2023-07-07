@@ -1,23 +1,23 @@
 import React from "react";
 
+let list = [
+  "ram",
+  "shyam",
+  "hari",
+  "bhole",
+  "nath",
+  "gopal",
+  "krishn",
+  "kanha",
+  "shankar",
+];
+
 const App = () => {
-  const relativeList = [
-    "anjum",
-    "khalid",
-    "hamid",
-    "amber",
-    "nabeel",
-    "ayan",
-    "atyab",
-    "ifrah",
-    "tabish",
-  ];
   return (
     <div id="main">
-      {/* Do not remove the main div */}
-      <ol key={"relativeList"}>
-        {relativeList.map((relative, index) => (
-          <li key={`relativeListItem${index + 1}`}>{relative}</li>
+      <ol id="relativeList">
+        {list.map((name, indx) => (
+          <li id={`relativeListItem${indx + 1}`}>{name}</li>
         ))}
       </ol>
     </div>
